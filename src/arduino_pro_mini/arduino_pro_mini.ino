@@ -5,7 +5,7 @@
 
 #define PIN 6
 #define MAX_LEDS 120
-#define DEFAULT_LEDS 40
+#define DEFAULT_LEDS 48
 
 enum ProfileId : uint8_t {
   PROFILE_CUSTOM = 0,
