@@ -63,3 +63,5 @@ FQBN=arduino:avr:pro:cpu=16MHzatmega328old ./flash.sh
 ```
 
 ![Illuminated flowerpot](images/flowerpot.png)
+
+![Illuminated flowerpot - kitchen](images/flowerpot-2.png)
