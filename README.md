@@ -26,4 +26,40 @@ Illuminated Flowerpot is a small home project that helps herbs and vegetables gr
 - Bluetooth SPP configuration
 - ESP32‑C3 Zero version with web configuration panel
 
+## Build and flash (Ubuntu)
+
+Install prerequisites:
+
+- Arduino CLI
+- AVR core and required libraries
+
+Quick setup:
+
+1) Install arduino-cli
+2) Run:
+
+```
+arduino-cli core update-index
+arduino-cli core install arduino:avr
+arduino-cli lib install "Adafruit NeoPixel"
+```
+
+Build:
+
+```
+./build.sh
+```
+
+Flash (adjust port if needed):
+
+```
+PORT=/dev/ttyUSB0 ./flash.sh
+```
+
+If your Pro Mini uses the old bootloader, set:
+
+```
+FQBN=arduino:avr:pro:cpu=16MHzatmega328old ./flash.sh
+```
+
 ![Illuminated flowerpot](images/flowerpot.png)
